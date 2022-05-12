@@ -1,0 +1,17 @@
+
+
+[
+{ "model": "auth.user",
+    "pk": 1,
+    "fields":{
+      "username": "admin",
+      "password": "'pbkdf2_sha256$320000$kJfesPmt5aCKBbJbDbkp35$xsASHNQGrRwiwDMP4MqL3gLNdYrjhGEc2EVWgiNILes='",
+      "email": "admin@loclahost.com",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "last_name": "Django",
+      "first_name": "Python junior"
+    }
+}
+]

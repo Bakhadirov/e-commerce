@@ -1,6 +1,6 @@
 venv
 .idea
-TODO.md
+
 db.sqlite3
 chromedriver.exe
 

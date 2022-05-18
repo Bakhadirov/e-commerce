@@ -17,7 +17,8 @@ def test_category_of_stockroom_dbfixture(
     result = models.Category.objects.get(id=id)
     assert result.name == name
     assert result.slug == slug
-    assert result.is_active == is_active
+    assert result.is_active == is_active  #предлагают разбить на три ассерта
+
 
 
 
@@ -31,7 +32,11 @@ def test_category_of_stockroom_dbfixture(
 )
 def test_category_of_stockroom_insert_data(
         db, category_factory, name, slug, is_active
-)
+):
+    result = category_factory.create(name=name, slug=slug, is_active=is_active)
+    assert result.name == name
+    assert result.slug == slug
+    assert result.is_active == is_active
     '''
     Создаем модели для инсерта в бд и тестинга их
     '''
